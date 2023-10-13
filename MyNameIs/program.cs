@@ -20,14 +20,17 @@ public class Program
         string ret = "";
         foreach (char letter in name)
         {
+			char real = Convert.ToChar(Convert.ToInt32(letter) + 32);
+			Console.WriteLine(real);
             for (int i = 0; i < alphabet.Count; i++)
             {
-                if (letter == alphabet[i])
+                if (real == alphabet[i])
                 {
                     ret += i.ToString();
                 }
             }
         }
+		Console.WriteLine(ret);
         return ret;
 
 
