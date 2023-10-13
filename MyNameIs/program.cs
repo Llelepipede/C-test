@@ -20,8 +20,8 @@ public class Program
         string ret = "";
         foreach (char letter in name)
         {
-			char real = Convert.ToChar(Convert.ToInt32(letter) + 32);
-			Console.WriteLine(real);
+            char real = Convert.ToChar(Convert.ToInt32(letter) + 32);
+            Console.WriteLine(real);
             for (int i = 0; i < alphabet.Count; i++)
             {
                 if (real == alphabet[i])
@@ -32,14 +32,6 @@ public class Program
         }
 		Console.WriteLine(ret);
         return ret;
-
-
-        // myNameIs("Ahmed") should return  '071243'
-        // myNameIs("Dorlean") return 31417114013
-        // myNameIs("a") return  0
-        // myNameIs("Sandrine") return 180133178134
-
-
     }
 
     public static void AlgoTest(Func<string, string> func)
